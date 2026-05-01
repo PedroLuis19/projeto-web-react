@@ -2,9 +2,9 @@
 
 # Principais propriedades:
 -O site é dividido em:
-	-Página Login
-    -Página Home (Resumo Geral)
-	-Página de Treinos
-	-Página de Explicação de Treino
-    -Página de Evolução (Gráficos)
+	-Página Login  
+    -Página Home (Resumo Geral)  
+	-Página de Treinos  
+	-Página de Explicação de Treino  
+    -Página de Evolução (Gráficos)  
     -Página de Notas
