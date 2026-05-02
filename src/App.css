@@ -1,12 +1,21 @@
+html{
+    scrollbar-gutter: stable;
+}
+
 body{
     font-family: 'Roboto Mono', sans-serif;
     background-color: rgb(14, 14, 14);
     color: white;
     padding-top: 70px; 
+    scrollbar-gutter: stable;
 }
 
 h1{
     font-weight: 900;
+}
+
+a {
+  text-decoration: none;
 }
 
 input{

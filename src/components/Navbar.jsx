@@ -1,11 +1,20 @@
+import { Link } from 'react-router-dom'
+
 import './Navbar.css'
 
 function Navbar(){
   return (
     <div className='navbar'>
-        <button className='home-button'>
+        <Link className='home-button' to='/'>
         <img className='home-img-button' src='src\assets\calli-home-img.png'/>
-        </button>
+        </Link>
+        <nav className='page-selection'>
+            <ul>
+                <Link className='page-link' to='training'>Organizar Treinos</Link>
+                <Link className='page-link' to='evolution'>Evolução</Link>
+                <Link className='page-link' to='comments'>Comentários</Link>
+            </ul>
+        </nav>
     </div>
   )
 }
