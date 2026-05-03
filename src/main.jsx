@@ -8,6 +8,7 @@ import Login from './components/Login.jsx'
 import TrainingOrganization from './components/TrainingOrganization.jsx'
 import Evolution from './components/Evolution.jsx'
 import History from './components/History.jsx'
+import TrainExplanation from './components/TrainExplanation.jsx'
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: 'training',
     element: <TrainingOrganization/>
+  },
+  {
+    path: 'training-explanation',
+    element: <TrainExplanation/>
   }
     ]
   }
