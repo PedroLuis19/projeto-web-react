@@ -9,6 +9,7 @@
     height: 70px;
     background-color: rgb(33, 33, 33);
     background: linear-gradient(to right, rgb(33, 33, 33), rgb(14, 14, 14));
+    box-shadow: 0 1px 10px 2px rgb(14, 14, 14);
 }
 
 .page-selection{

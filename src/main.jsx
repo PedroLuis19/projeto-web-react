@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path:'/', //aqui é a página base, por isso apenas o "/"
     element: <App/>,
     children:[{
-    path:'/', //aqui é a página base, por isso apenas o "/"
+    path:'/', 
     element: <Login/>
   },
   {

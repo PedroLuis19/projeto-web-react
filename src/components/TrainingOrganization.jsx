@@ -1,56 +1,48 @@
 
 import { useState } from "react";
 
+import TrainingDayFolder from './TrainingDayFolder'
+
 import './TrainingOrganization.css'
 
 function TrainingOrganization(){
   
-    const [folder, setFolder] = useState([])
-
-    const [todos, setTodos] = useState([])
-
-    const [inputValue, setInputValue] = useState('')
-
-    //Adiciona tarefa//
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    
-        if (inputValue.trim() !== ""){
-            const newTodo = {
-                id: Date.now(),
-                text: inputValue,
-                date: new Date().toLocaleDateString('pt-BR')
-            }
-
-            setTodos((prevTodos) => [...prevTodos, newTodo])
-
-            setInputValue("")
-        }
-    }   
-
   return (
-    <div className='list-container'>
-        <form onSubmit={handleSubmit} className='train-add'>
-          <input type="text" className='input-field' placeholder='Adicionar um treino' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-          <button type="submit" className='add-button'>+</button>
-        </form>
+    <div className="folder-container">
+      <div className="day-folder">
+        <h2>Domingo</h2>
+        <TrainingDayFolder/>
+      </div>
 
-        {todos.length === 0 ? (<p className="small-description">Não há treinos...</p>) : (null) }
-        <div className="todo-folder">
-          <ul className='todo-list'>
-              {todos.map((todo) => (
-                  <li key={todo.id} className='todo-item'>
-                    <div className="todo-text">
-                      {todo.text} 
-                    </div>
-                    <div className="todo-date">
-                      {todo.date}
-                    </div> 
-                    
-                  </li>
-              ))}
-          </ul>
-        </div>
+      <div className="day-folder">
+        <h2>Segunda-feira</h2>
+        <TrainingDayFolder/>
+      </div>
+
+      <div className="day-folder">
+        <h2>Terça-feira</h2>
+        <TrainingDayFolder/>
+      </div>
+
+      <div className="day-folder">
+        <h2>Quarta-feira</h2>
+        <TrainingDayFolder/>
+      </div>
+
+      <div className="day-folder">
+        <h2>Quinta-feira</h2>
+        <TrainingDayFolder/>
+      </div>
+
+      <div className="day-folder">
+        <h2>Sexta-feira</h2>
+        <TrainingDayFolder/>
+      </div>
+
+      <div className="day-folder">
+        <h2>Sábado</h2>
+        <TrainingDayFolder/>
+      </div>
     </div>
   )
 }
