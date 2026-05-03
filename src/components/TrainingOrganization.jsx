@@ -4,6 +4,9 @@ import { useState } from "react";
 import './TrainingOrganization.css'
 
 function TrainingOrganization(){
+  
+    const [folder, setFolder] = useState([])
+
     const [todos, setTodos] = useState([])
 
     const [inputValue, setInputValue] = useState('')
@@ -33,20 +36,21 @@ function TrainingOrganization(){
         </form>
 
         {todos.length === 0 ? (<p className="small-description">Não há treinos...</p>) : (null) }
-
-        <ul className='todo-list'>
-            {todos.map((todo) => (
-                <li key={todo.id} className='todo-item'>
-                  <div className="todo-text">
-                    {todo.text} 
-                  </div>
-                  <div className="todo-date">
-                    {todo.date}
-                  </div> 
-                  
-                </li>
-            ))}
-        </ul>
+        <div className="todo-folder">
+          <ul className='todo-list'>
+              {todos.map((todo) => (
+                  <li key={todo.id} className='todo-item'>
+                    <div className="todo-text">
+                      {todo.text} 
+                    </div>
+                    <div className="todo-date">
+                      {todo.date}
+                    </div> 
+                    
+                  </li>
+              ))}
+          </ul>
+        </div>
     </div>
   )
 }

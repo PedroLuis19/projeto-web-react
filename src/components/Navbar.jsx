@@ -12,7 +12,7 @@ function Navbar(){
             <ul>
                 <Link className='page-link' to='training'>Organizar Treinos</Link>
                 <Link className='page-link' to='evolution'>Evolução</Link>
-                <Link className='page-link' to='comments'>Comentários</Link>
+                <Link className='page-link' to='history'>Histórico</Link>
             </ul>
         </nav>
     </div>

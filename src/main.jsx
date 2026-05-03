@@ -7,7 +7,7 @@ import App from './App.jsx'
 import Login from './components/Login.jsx'
 import TrainingOrganization from './components/TrainingOrganization.jsx'
 import Evolution from './components/Evolution.jsx'
-import Comments from './components/Comments.jsx'
+import History from './components/History.jsx'
 
 
 const router = createBrowserRouter([
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
     element: <Evolution/>
   },
   {
-    path: 'comments',
-    element: <Comments/>
+    path: 'history',
+    element: <History/>
   },
   {
     path: 'training',
