@@ -7,7 +7,7 @@ function TrainExplanation() {
         <h1 className='title'>Parte superior</h1>
         <div className='section'>
           <h2>Braços</h2>
-          <video className='video' src="https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-chinup-front.mp4" autoplay="" playsinline="" loop=""></video>
+          <video className='video' src="https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-chinup-front.mp4" autoplay="1" playsinline="" loop="1"></video>
           <ol className='numerated-instruction'>
             <li>Segure a barra com as mãos afastadas na largura dos ombros e com uma pegada supinada (palmas voltadas para você).</li>
             <br/>
