@@ -7,4 +7,4 @@
 	-Página de Treinos  
 	-Página de Explicação de Treino  
     -Página de Evolução (Gráficos)  
-    -Página de Notas
+    -Página de Histórico de exercícios feitos
