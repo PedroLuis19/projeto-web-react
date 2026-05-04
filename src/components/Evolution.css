@@ -1,0 +1,123 @@
+.general-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  min-height: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.staircase-wrapper {
+  display: flex;
+  align-items: flex-end; 
+  gap: 10px; 
+  flex: 1;
+  padding-bottom: 5px;
+}
+
+.step-bar {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.step-content {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.step-bar.completed .step-content {
+  color: #000000;
+}
+
+.step-bar.active .step-content {
+  color: #ADFF2F;
+}
+
+.step-label {
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.75rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+/* Concluído */
+.step-bar.completed {
+  background-color: rgb(179 255 56);
+}
+
+/* Ativo (Destaque) */
+.step-bar.active {
+  background-color: transparent; /* Azul da imagem original */
+  border: 1px solid rgb(179 255 56);
+  z-index: 2;
+}
+
+.step-bar.active .step-label {
+  color: rgb(179 255 56);
+  font-weight: bold;
+}
+
+/* Linha de base do gráfico */
+.base-line {
+  height: 4px;
+  background-color: #333;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.message{
+    height: fit-content;
+    width: auto;
+    padding: 10px;
+    border: 1px solid rgb(179 255 56);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.message-quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(179 255 56);
+    border-radius: 5px;
+
+}
+
+.summary-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+    max-width: 400px;
+    height: auto;
+    padding: 25px;
+    margin: 10px;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(57, 57, 57);
+    border-radius: 10px;
+}

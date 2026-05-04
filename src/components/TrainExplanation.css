@@ -1,0 +1,26 @@
+.title{
+    width: max-content;
+    border: 1px solid rgb(179 255 56);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.section{
+    margin: 10px;
+}
+
+.video{
+    width: 800px;
+    border: 1px solid rgb(179 255 56);
+    border-radius: 10px;
+}
+
+.numerated-instruction{
+    list-style-type: upper-roman;
+    list-style-position: inside; 
+    padding: 5px;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(57, 57, 57);
+    border-radius: 5px;
+    width: max-content;
+}

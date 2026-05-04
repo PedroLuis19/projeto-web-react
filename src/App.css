@@ -34,3 +34,8 @@ input:focus{
     outline: none;
     border-color: rgb(179 255 56)
 }
+
+li::marker {
+  color: rgb(179 255 56);
+  font-weight: bold;
+}
